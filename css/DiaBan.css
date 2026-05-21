@@ -392,12 +392,15 @@
     height: auto;
     overflow-x: hidden;
     padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .header,
   .logo-wed{
     width: 100%;
     max-width: 100%;
+    position: relative;
   }
 
   .header{
@@ -413,30 +416,29 @@
   .menu,
   .menu2,
   .menu3{
+    position: relative;
     width: 28%;
     height: 110px;
-
-    top: 290px;
-
+    margin-top: 20px;
+    top: auto;
     font-size: 28px;
   }
 
   .menu{
-    left: 3%;
+    margin-left: 3%;
   }
 
   .menu2{
-    left: 36%;
+    margin-left: 3%;
   }
 
   .menu3{
-    left: 69%;
+    margin-left: 3%;
   }
 
   .menu-btn{
     width: 100%;
     height: 110px;
-
     font-size: 28px;
   }
 
@@ -445,7 +447,7 @@
     top: 110px;
   }
 
-  /* BOX */
+  /* BOX - GRID LAYOUT */
 
   .v-kh,
   .v-kh2,
@@ -455,57 +457,12 @@
   .v-kh6,
   .v-kh7,
   .v-kh8{
-
+    position: relative;
     width: 42%;
     height: 300px;
-  }
-
-  /* hàng 1 */
-
-  .v-kh{
-    left: 5%;
-    top: 500px;
-  }
-
-  .v-kh2{
-    left: 53%;
-    top: 500px;
-  }
-
-  /* hàng 2 */
-
-  .v-kh3{
-    left: 5%;
-    top: 860px;
-  }
-
-  .v-kh4{
-    left: 53%;
-    top: 860px;
-  }
-
-  /* hàng 3 */
-
-  .v-kh5{
-    left: 5%;
-    top: 1220px;
-  }
-
-  .v-kh6{
-    left: 53%;
-    top: 1220px;
-  }
-
-  /* hàng 4 */
-
-  .v-kh7{
-    left: 5%;
-    top: 1580px;
-  }
-
-  .v-kh8{
-    left: 53%;
-    top: 1580px;
+    margin: 20px 2.5%;
+    top: auto;
+    left: auto;
   }
 
   .v-kh span,
@@ -534,15 +491,13 @@
   /* FOOTER */
 
   .rectangle-2{
-
+    position: relative;
     width: 90%;
     height: auto;
-
-    left: 5%;
-    top: 1960px;
-
+    margin: 30px auto;
+    left: auto;
+    top: auto;
     font-size: 24px;
-
     padding: 30px;
   }
 
@@ -557,11 +512,14 @@
   .trang-v-kh-c-nh-n{
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .header,
   .logo-wed{
     width: 100%;
+    position: relative;
   }
 
   .header{
@@ -577,32 +535,18 @@
   .menu,
   .menu2,
   .menu3{
-
+    position: relative;
     width: 90%;
     height: 80px;
-
-    left: 5%;
-
+    margin: 15px auto;
+    left: auto;
+    top: auto;
     font-size: 22px;
   }
 
-  .menu{
-    top: 190px;
-  }
-
-  .menu2{
-    top: 290px;
-  }
-
-  .menu3{
-    top: 390px;
-  }
-
   .menu-btn{
-
     width: 100%;
     height: 80px;
-
     font-size: 22px;
   }
 
@@ -625,23 +569,14 @@
   .v-kh6,
   .v-kh7,
   .v-kh8{
-
+    position: relative;
     width: 90%;
     height: auto;
-
-    left: 5%;
-
+    margin: 20px auto;
+    left: auto;
+    top: auto;
     padding: 20px;
   }
-
-  .v-kh{ top: 520px; }
-  .v-kh2{ top: 900px; }
-  .v-kh3{ top: 1280px; }
-  .v-kh4{ top: 1660px; }
-  .v-kh5{ top: 2040px; }
-  .v-kh6{ top: 2420px; }
-  .v-kh7{ top: 2800px; }
-  .v-kh8{ top: 3180px; }
 
   .v-kh span,
   .v-kh2 span,
@@ -651,7 +586,6 @@
   .v-kh6 span,
   .v-kh7 span,
   .v-kh8 span{
-
     font-size: 20px;
   }
 
@@ -663,7 +597,6 @@
   .v-kh6 a,
   .v-kh7 a,
   .v-kh8 a{
-
     width: 100%;
     font-size: 17px;
   }
@@ -671,17 +604,14 @@
   /* FOOTER */
 
   .rectangle-2{
-
+    position: relative;
     width: 90%;
     height: auto;
-
-    left: 5%;
-    top: 3600px;
-
+    margin: 20px auto;
+    left: auto;
+    top: auto;
     padding: 20px;
-
     font-size: 18px;
-
     line-height: 1.5;
   }
 
