@@ -412,54 +412,68 @@
 }
 
 
-/* RESPONSIVE CHO ĐIỆN THOẠI */
-@media screen and (max-width: 768px){
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media screen and (max-width: 1024px){
 
   .trang-v-kh-c-nh-n{
     width: 100%;
     height: auto;
-    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
   }
 
-  .header{
+  .header,
+  .logo-wed{
     width: 100%;
-    height: 250px;
+    height: auto;
+    position: relative;
   }
 
   .logo-wed{
-    width: 100%;
-    height: 180px;
+    max-height: 250px;
+    object-fit: cover;
   }
 
-  /* MENU */
-
+  /* menu */
   .menu,
   .menu2,
   .menu3{
-    position: static;
-    width: 90%;
-    height: 80px;
+    width: 28%;
+    height: 110px;
 
-    margin: 20px auto;
+    top: 300px;
 
-    font-size: 25px;
+    font-size: 28px;
+  }
+
+  .menu{
+    left: 3%;
+  }
+
+  .menu2{
+    left: 36%;
+  }
+
+  .menu3{
+    left: 69%;
   }
 
   .menu-btn{
     width: 100%;
-    height: 80px;
+    height: 110px;
 
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .submenu{
     width: 100%;
-    left: 0;
-    top: 80px;
+    top: 110px;
   }
 
-  /* HÌNH */
-
+  /* hình */
   .v-kh,
   .v-kh2,
   .v-kh3,
@@ -476,31 +490,160 @@
   .v-kh14,
   .v-kh15{
 
-    position: static;
+    width: 28%;
+    height: 220px;
+  }
+
+  /* cột 1 */
+  .v-kh{ left: 3%; top: 500px; }
+  .v-kh2{ left: 3%; top: 800px; }
+  .v-kh3{ left: 3%; top: 1100px; }
+  .v-kh4{ left: 3%; top: 1400px; }
+  .v-kh5{ left: 3%; top: 1700px; }
+
+  /* cột 2 */
+  .v-kh6{ left: 36%; top: 500px; }
+  .v-kh7{ left: 36%; top: 800px; }
+  .v-kh8{ left: 36%; top: 1100px; }
+  .v-kh9{ left: 36%; top: 1400px; }
+  .v-kh10{ left: 36%; top: 1700px; }
+
+  /* cột 3 */
+  .v-kh11{ left: 69%; top: 500px; }
+  .v-kh12{ left: 69%; top: 800px; }
+  .v-kh13{ left: 69%; top: 1100px; }
+  .v-kh14{ left: 69%; top: 1400px; }
+  .v-kh15{ left: 69%; top: 1700px; }
+
+  .rectangle-2{
+    width: 94%;
+    left: 3%;
+    top: 2050px;
+
+    height: auto;
+
+    font-size: 24px;
+
+    padding: 20px;
+  }
+
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width: 768px){
+
+  .trang-v-kh-c-nh-n{
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .header{
+    height: auto;
+  }
+
+  .logo-wed{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    position: relative;
+  }
+
+  /* menu dọc */
+  .menu,
+  .menu2,
+  .menu3{
+
+    width: 90%;
+    height: 90px;
+
+    left: 5%;
+
+    font-size: 24px;
+  }
+
+  .menu{
+    top: 230px;
+  }
+
+  .menu2{
+    top: 340px;
+  }
+
+  .menu3{
+    top: 450px;
+  }
+
+  .menu-btn{
+    width: 100%;
+    height: 90px;
+
+    font-size: 24px;
+  }
+
+  .submenu{
+    width: 100%;
+    top: 90px;
+  }
+
+  /* ảnh full ngang */
+  .v-kh,
+  .v-kh2,
+  .v-kh3,
+  .v-kh4,
+  .v-kh5,
+  .v-kh6,
+  .v-kh7,
+  .v-kh8,
+  .v-kh9,
+  .v-kh10,
+  .v-kh11,
+  .v-kh12,
+  .v-kh13,
+  .v-kh14,
+  .v-kh15{
 
     width: 90%;
     height: 250px;
 
-    margin: 20px auto;
-
-    display: block;
-
-    object-fit: cover;
+    left: 5%;
   }
 
-  /* FOOTER */
+  .v-kh{ top: 600px; }
+  .v-kh2{ top: 900px; }
+  .v-kh3{ top: 1200px; }
+  .v-kh4{ top: 1500px; }
+  .v-kh5{ top: 1800px; }
+
+  .v-kh6{ top: 2100px; }
+  .v-kh7{ top: 2400px; }
+  .v-kh8{ top: 2700px; }
+  .v-kh9{ top: 3000px; }
+  .v-kh10{ top: 3300px; }
+
+  .v-kh11{ top: 3600px; }
+  .v-kh12{ top: 3900px; }
+  .v-kh13{ top: 4200px; }
+  .v-kh14{ top: 4500px; }
+  .v-kh15{ top: 4800px; }
 
   .rectangle-2{
-    position: static;
 
     width: 90%;
+
+    left: 5%;
+
+    top: 5150px;
+
     height: auto;
 
-    margin: 30px auto;
+    padding: 20px;
 
     font-size: 20px;
 
-    padding: 20px;
+    line-height: 1.5;
   }
 
 }
