@@ -507,49 +507,39 @@
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .header{
     width: 100%;
     height: 350px;
+    position: relative;
   }
 
   .logo-wed{
     width: 100%;
     height: 180px;
-
     object-fit: cover;
+    position: relative;
   }
 
   /* MENU XẾP DỌC */
   .menu,
   .menu2,
   .menu3{
-
+    position: relative;
     width: 90%;
     height: 85px;
-
-    left: 5%;
-
+    margin: 10px auto;
+    left: auto;
+    top: auto;
     font-size: 22px;
-  }
-
-  .menu{
-    top: 190px;
-  }
-
-  .menu2{
-    top: 290px;
-  }
-
-  .menu3{
-    top: 390px;
   }
 
   .menu-btn{
     width: 100%;
     height: 85px;
-
     font-size: 22px;
   }
 
@@ -565,31 +555,29 @@
 
   /* KHUNG ĐEN */
   .rectangle-3{
-
+    position: relative;
     width: 90%;
-
-    left: 5%;
-    top: 520px;
-
+    margin: 30px auto;
+    left: auto;
+    top: auto;
     height: auto;
-
     font-size: 22px;
-
     line-height: 1.5;
-
     padding: 20px;
   }
 
   /* POPUP */
   .telegram-popup{
-
+    position: relative;
     width: 90%;
-
-    left: 5%;
-
-    top: 720px;
-
+    margin: 30px auto;
+    left: auto;
+    top: auto;
     padding: 15px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
   }
 
   .popup-title{
@@ -599,43 +587,43 @@
   .telegram-link{
     font-size: 20px;
     padding: 15px;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   /* CHAT BUTTON */
   .ellipse-1{
-
+    position: relative;
     width: 280px;
     height: 120px;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    top: 980px;
-
+    margin: 30px auto;
+    left: auto;
+    transform: none;
+    top: auto;
     font-size: 28px;
-
     letter-spacing: 1px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 20;
   }
 
   .ellipse-1:hover{
-    transform: translateX(-50%) scale(1.05);
+    transform: scale(1.05);
   }
 
   /* FOOTER */
   .rectangle-2{
-
+    position: relative;
     width: 90%;
-
-    left: 5%;
-
-    top: 1200px;
-
+    margin: 30px auto;
+    left: auto;
+    top: auto;
     height: auto;
-
     padding: 20px;
-
     font-size: 18px;
-
     line-height: 1.5;
   }
 
