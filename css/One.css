@@ -5,7 +5,7 @@
 .index {
   background: #ffffff;
   padding: 10px;
-  height: 3000px;
+  min-height: 100vh;
   position: relative;
 }
 .header {
@@ -145,7 +145,8 @@
   border: 5px solid black;
 
   width: 600px;
-  height: 800px;
+  min-height: 800px;  /* ← Thay từ 'height' thành 'min-height' */
+  height: auto;       /* ← Thêm dòng này để tự động mở rộng */
 
   position: absolute;
 
@@ -154,7 +155,7 @@
 
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 
-  overflow: hidden;
+  overflow: visible;  /* ← Thay từ 'hidden' thành 'visible' */
 }
 
 /* chữ */
@@ -175,10 +176,10 @@
 
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: flex-start;  /* ← Thay từ 'center' */
 
   width: 100%;
-  height: 100%;
+  height: auto;  /* ← Thay từ '100%' */
 }
 
 /* tiêu đề trong text */
@@ -256,16 +257,18 @@
   .Mota{
     width: 42%;
     height: auto;
+    min-height: 500px;
 
     left: 53%;
     top: 520px;
 
-    min-height: 500px;
+    overflow: visible;  /* ← Thêm dòng này */
   }
 
   .text{
     font-size: 24px;
     padding: 25px;
+    height: auto;  /* ← Thêm dòng này */
   }
 
   .text b{
@@ -293,7 +296,7 @@
   .logo-wed { height: 180px; }
 
   .menu {
-    position: relative; /* Thay từ absolute */
+    position: relative;
     width: 90%;
     height: 90px;
     margin: 20px auto;
@@ -304,7 +307,7 @@
   }
 
   .menu-exit {
-    position: relative; /* Thay từ absolute */
+    position: relative;
     width: 120px;
     height: 45px;
     margin: 10px 15px;
@@ -314,7 +317,7 @@
   }
 
   .v-kh {
-    position: relative; /* Thay từ absolute */
+    position: relative;
     width: 90%;
     height: auto;
     margin: 30px auto;
@@ -323,19 +326,21 @@
   }
 
   .Mota {
-    position: relative; /* Thay từ absolute */
+    position: relative;
     width: 90%;
     height: auto;
     margin: 0 auto 30px;
     top: 0;
     left: 0;
     min-height: 450px;
+    overflow: visible;  /* ← Thêm dòng này */
   }
 
   .text {
     font-size: 18px;
     line-height: 1.6;
     padding: 20px;
+    height: auto;  /* ← Thêm dòng này */
   }
 
   .text b { font-size: 28px; }
